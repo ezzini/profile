@@ -160,7 +160,7 @@ params:
     title: "About Me"
     image: "/images/tang.jpeg"
     content: |-
-      Daniel (Xunzhu) Tang is a doctoral researcher of Trux, [Interdisciplinary Security and Trust Centre (SnT), University of Luxembourg (UL)] (https://wwwen.uni.lu/snt) . His research interests mainly relate to Code&Patch; Explanation, Automatic Program Repair, Collaborative Agents for SE, Conversational IDE, Security in Large Language Model (LLM) (i.e, LLM poisoning, LLM watermarks). His researches has been published in largely diverse top-tier conferences/journals in both NLP, SE, and ML communities, including ICSE, ASE, EMSE, ICLR, ACL, NAACL, etc. Furthermore, Daniel also work as PC/Reviewer/AC in SOSP, ACL, EMNLP, MSR, etc. 
+      Daniel (Xunzhu) Tang is a doctoral researcher of Trux, [Interdisciplinary Security and Trust Centre (SnT), University of Luxembourg (UL)](https://wwwen.uni.lu/snt) . His research interests mainly relate to Code&Patch; Explanation, Automatic Program Repair, Collaborative Agents for SE, Conversational IDE, Security in Large Language Model (LLM) (i.e, LLM poisoning, LLM watermarks). His researches has been published in largely diverse top-tier conferences/journals in both NLP, SE, and ML communities, including ICSE, ASE, EMSE, ICLR, ACL, NAACL, etc. Furthermore, Daniel also work as PC/Reviewer/AC in SOSP, ACL, EMNLP, MSR, etc. 
       
       I am currently working on a project that will be used to help people find the best way to get around the city.
     skills:
