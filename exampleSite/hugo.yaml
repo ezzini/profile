@@ -1,6 +1,6 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://dtang.netlify.app"
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "Daniel Tang's homepage"
 theme: hugo-profile
 
 outputs:
@@ -59,8 +59,8 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
-  description: Text about my cool site
+  title: "Daniel Tang's homepage"
+  description: This is my new website
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -113,11 +113,11 @@ params:
   # If you want to customize the menu, you can change it here
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    brandLogo: "/fav.png" # Logo for the brand | default is the favicon variable
     # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    brandName: "Daniel Tang" # Brand name for the brand | default is the title variable
     disableSearch: false
-    # searchPlaceholder: "Search"
+    searchPlaceholder: "Search"
     stickyNavBar:
       enable : true
       showOnScrollUp : true
@@ -134,10 +134,10 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Isabella."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
-    image: /images/hero.svg
+    title: "Daniel Tang."
+    subtitle: "AI for Software Engineering Researcher"
+    content: "A passionate Software Engineering PhD researcher at the University of Luxembourg, exploring the exciting intersection of LLMs and Software Engineering, from intelligent agents to robust security and automatic repair."
+    image: /images/avatar.svg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -150,12 +150,9 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
-        - icon: fab fa-x-twitter
-          url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+          url: https://github.com/daniel4se
+        - icon: fab fa-google-scholar
+          url: https://scholar.google.com/citations?user=MxpAtQoAAAAJ&hl=zh-CN
 
   # About
   about:
@@ -163,84 +160,63 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
-
+      Daniel (Xunzhu) Tang is a doctoral researcher of Trux, [Interdisciplinary Security and Trust Centre (SnT), University of Luxembourg (UL)] (https://wwwen.uni.lu/snt) . His research interests mainly relate to Code&Patch; Explanation, Automatic Program Repair, Collaborative Agents for SE, Conversational IDE, Security in Large Language Model (LLM) (i.e, LLM poisoning, LLM watermarks). His researches has been published in largely diverse top-tier conferences/journals in both NLP, SE, and ML communities, including ICSE, ASE, EMSE, ICLR, ACL, NAACL, etc. Furthermore, Daniel also work as PC/Reviewer/AC in SOSP, ACL, EMNLP, MSR, etc. 
+      
       I am currently working on a project that will be used to help people find the best way to get around the city.
     skills:
       enable: true
-      title: "Here are a few technologies I've been working with recently:"
+      title: "Research interests:"
       items:
-        - "HTML"
-        - "CSS"
-        - "JavaScript"
-        - "React"
-        - "Node"
-        - "Express"
+        - "LLM-Based Agents for software engineering: CodeAgent, CodeChat"
+        - "Patch Representation and Explanation"
+        - "Software Security"
+        - "Automatic Programm Repair"
+        - "Large Code(Language) Model"     
 
   # Experience
   experience:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Senior Software Developer"
-        company: "Facebook"
-        companyUrl: "https://example.com"
-        date: "Jan 2022 - present"
-        featuredLink:
-          enable: true
-          name: "View the project"
-          url: "https://example.com"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+      # - job: "Founder and CEO of Enoch-AI"
+      #   company: "Enoch-AI"
+      #   companyUrl: "https://enoch-ai.com"
+      #   date: "Dec 2023 - present"
+      #   featuredLink:
+      #     enable: false
+      #     name: "View the project"
+      #     url: "https://enoch-ai.com"
+      #   content: "I created this start-up to commercialize Agents-based AI software solutions."
 
-      - job: "Software Developer"
-        company: "Amazon"
-        companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+      - job: "Doctoral Researcher"
+        company: "TruX, SnT"
+        companyUrl: "https://www.uni.lu/snt-en/research-groups/trux/"
+        date: "Oct 2021 - present"
         info:
           enable: true
           content: I worked as a software developer for more than one year in Amazon.
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+          I am currently working as a doctoral researcher at Trust Worthy Software group (TruX) within SnT in Luxembourg. I work on different research projects mainly related to AI for software engineering, including:
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
+          - Code-Based LLMs
+          - AI agents for automated software engineering
+          - Automatic Programm Repair
+          
 
-      - job: "Junior Software Developer"
-        company: "Apple"
-        companyUrl: "https://example.com"
-        date: "Jan 2020 - Aug 2020"
-        info:
-          enable: false
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+      - job: "Research Assistant"
+        company: "Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China"
+        companyUrl: "http://english.ict.cas.cn/"
+        date: "Sep 2020 - Oct 2021"
+        # featuredLink:
+        #   enable: true
+        #   url: "https://example.com"
+          
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "UI/UX Designer"
-        company: "Netflix"
-        companyUrl: "https://example.com"
-        date: "June 2017 - Nov 2019"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Product Designer"
-        company: "Google"
-        companyUrl: "https://example.com"
-        date: "Feb 2016 - Mar 2017"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+      - job: "Research Assistant Intern"
+        company: "Penn State University"
+        companyUrl: "https://www.psu.edu/"
+        date: "May 2020 - Aug 2020"
+          
 
   # Education
   education:
@@ -248,64 +224,55 @@ params:
     # title: "Custom Name"
     index: false
     items:
-      - title: "Master of Business Administration"
+      - title: "PhD of Computer Science"
         school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+          name: "University of Luxembourg, Luxembourg"
+        date: "2021 - Now"
+        
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+          supervised by Prof. [Dr. Tegawendé F. Bissyandé](wwwen.uni.lu/snt/people/tegawende_francois_d_assise_bissyande)
+
+      - title: "Master of Science in Computer Science"
+        school:
+          name: "Huazhong University of Science and Technology, Wuhan, China"
+        date: "2016 - 2021"
+
       - title: "Bachelor of Science in Computer Science"
         school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+          name: "Guangxi University, Guangxi, China"
+        date: "2012 - 2016"
 
   # Achievements
   achievements:
     enable: true
-    # title: "Custom Name"
+    title: "News"
     items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-        image: /images/achievement.jpg
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
-        image: /images/achievement.jpg
-      - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
-        url: "https://github.com/gurusabarish/hugo-profile"
-        image: /images/achievement.jpg
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
+      - title: CodeAgent 
+        content: 🔊 2024-09, Our CodeAgent is accepted by EMNLP'24 main track 
+        url: https://aclanthology.org/2024.emnlp-main.632.pdf
+      - title: DataRecipe
+        content: 🔊 2024-08, Our DataRecipe is accepted by ASE'24 main track
+        # image: /images/achievement.jpg
+      - title: BugRMSys 
+        content: 🔊 2024-08, Our BugRMSys is accepted by ASE'24 journal first
+      - title: HedgeCode
+        content: 🔊 2024-07, Our HedgeCode is accepted by ICSE'25
       - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
+        content: 🔊 2024-04, Our TSED is accepted by ARR2024 (ACL'24) Feb
+      - title: VisLingInstruct
+        content: 🔊 2024-02, Our VisLingInstruct is accepted by NAACL'24
+      - title: CodeAgent
+        content: 🔊 2024-02, CodeAgent is invited to give a global talk @ SAP group
+      - title: Accepted at ICLR
+        content: 🔊 2024-02, one paper accepted by ICLR'24 tiny track
+      - title: Accepted at ICSE
+        content: 🔊 2024-01, one paper accepted by ICSE'24 Poster
+      - title: Accepted at ICSE
+        content: 🔊 2023-12, one paper accepted by ICSE'24 SEIP
+      - title: Accepted at ASE 
+        content: 🔊 2023-07, one paper accepted by ASE'23
+      
+
 
   # projects
   projects:
@@ -361,9 +328,14 @@ params:
   contact:
     enable: true
     # title: "Custom Name"
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    btnName: Mail me
-    btnLink: mailto:gurusabarisha@gmail.com
+    content: |
+      Address: University of Luxembourg, 6, rue Richard Coudenhove-Kalergi, L-1359 Luxembourg, Luxembourg 
+      
+      Phone: +352 661575801
+
+      My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    btnName: Mail me: xunzhu.tang AT uni.lu
+    btnLink: mailto:xunzhu.tang@uni.lu 
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -371,34 +343,9 @@ params:
     #   messageCaption: "Enter your message here"
     #   messageRows: 5
 
-  footer:
-    recentPosts:
-      path: "blogs"
-      count: 3
-      title: Recent Posts
-      enable: true
-      disableFeaturedImage: false
-    socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+  
 
-  # List pages like blogs and posts
-  listPages:
-    disableFeaturedImage: false
-
-  # Single pages like blog and post
-  singlePages:
-    socialShare: true
-    readTime:
-      enable: true
-      content: "min read"
-    scrollprogress:
-      enable: true
-    tags:
-      openInNewTab: true
+ 
 
   # For translations
   terms:
