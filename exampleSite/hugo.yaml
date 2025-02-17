@@ -82,7 +82,7 @@ params:
 
   theme:
     # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+     defaultTheme: "light" # dark
 
   font:
     fontSize: 1rem # default: 1rem
@@ -187,13 +187,11 @@ params:
       #     name: "View the project"
       #     url: "https://enoch-ai.com"
       #   content: "I created this start-up to commercialize Agents-based AI software solutions."
-
+      
       - job: "Doctoral Researcher"
-        company: "TruX, SnT"
+        company: "TruX - SnT"
         companyUrl: "https://www.uni.lu/snt-en/research-groups/trux/"
         date: "Oct 2021 - present"
-
-          
 
       - job: "Research Assistant"
         company: "Institute of Computing Technology"
@@ -204,7 +202,6 @@ params:
         #   enable: true
         #   url: "https://example.com"
           
-
       - job: "Research Assistant Intern"
         company: "Penn State University"
         companyUrl: "https://www.psu.edu/"
