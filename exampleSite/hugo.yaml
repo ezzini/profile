@@ -137,7 +137,7 @@ params:
     title: "Daniel Tang."
     subtitle: "AI for Software Engineering Researcher"
     content: "A passionate Software Engineering PhD researcher at the University of Luxembourg, exploring the exciting intersection of LLMs and Software Engineering, from intelligent agents to robust security and automatic repair."
-    image: /images/avatar.svg
+    image: /images/avatar.png
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -151,14 +151,14 @@ params:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/daniel4se
-        - icon: fab fa-google-scholar
+        - icon: ai ai-google-scholar
           url: https://scholar.google.com/citations?user=MxpAtQoAAAAJ&hl=zh-CN
 
   # About
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/images/tang.jpeg"
     content: |-
       Daniel (Xunzhu) Tang is a doctoral researcher of Trux, [Interdisciplinary Security and Trust Centre (SnT), University of Luxembourg (UL)] (https://wwwen.uni.lu/snt) . His research interests mainly relate to Code&Patch; Explanation, Automatic Program Repair, Collaborative Agents for SE, Conversational IDE, Security in Large Language Model (LLM) (i.e, LLM poisoning, LLM watermarks). His researches has been published in largely diverse top-tier conferences/journals in both NLP, SE, and ML communities, including ICSE, ASE, EMSE, ICLR, ACL, NAACL, etc. Furthermore, Daniel also work as PC/Reviewer/AC in SOSP, ACL, EMNLP, MSR, etc. 
       
@@ -362,3 +362,4 @@ params:
 
   #customScripts: -| # You can add custom scripts which will be added before </body> tag
   #  <script type="text/javascript"><!-- any script here --></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
