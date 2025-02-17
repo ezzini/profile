@@ -334,7 +334,7 @@ params:
       Phone: +352 661575801
 
       My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    btnName: Mail me: xunzhu.tang AT uni.lu
+    btnName: Mail me
     btnLink: mailto:xunzhu.tang@uni.lu 
     # formspree:
     #   enable: true # `contact.email` value will be ignored
