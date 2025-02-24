@@ -28,6 +28,14 @@ markup:
     renderer:
       unsafe: true
 
+
+Menus:
+  main:
+    - identifier: publications
+      name: Publications
+      title: Publications
+      url: /#publications
+      weight: 1
 # Menus:
 #   main:
 #     - identifier: blog
@@ -231,6 +239,31 @@ params:
         school:
           name: "Guangxi University, Guangxi, China"
         date: "2012 - 2016"
+
+  # Publications section
+  publications:
+    enable: true
+    title: "Publications"
+    items:
+      - title: "CodeAgent: Collaborative Software Development with Large Language Models"
+        venue: "EMNLP 2024"
+        authors: "Daniel Tang, et al."
+        year: "2024"
+        url: "https://aclanthology.org/2024.emnlp-main.632.pdf"
+        
+      - title: "DataRecipe: Data Generation and Augmentation for Software Engineering"
+        venue: "ASE 2024"
+        authors: "Daniel Tang, et al."
+        year: "2024"
+        url: "#"
+        
+      - title: "HedgeCode: Securing Large Language Models for Code"
+        venue: "ICSE 2025"
+        authors: "Daniel Tang, et al."
+        year: "2024"
+        url: "#"
+        
+      # Add more publications as needed
 
   # Achievements
   achievements:
