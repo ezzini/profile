@@ -275,7 +275,7 @@ params:
   # Achievements
   achievements:
     enable: false
-    title: "News"
+    title: "Ach"
     items:
       - title: CodeAgent 
         content: 🔊 2024-09, Our CodeAgent is accepted by EMNLP'24 main track 

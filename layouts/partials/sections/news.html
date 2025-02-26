@@ -1,16 +1,12 @@
-<div class="container-fluid section" id="news">
+{{ if .Site.Params.news.enable | default false }}
+<section id="news" class="py-5">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="section-title">
-                    <h2>{{ .Site.Params.news.title }}</h2>
-                </div>
-            </div>
-        </div>
+        <h3 class="text-center">{{ .Site.Params.news.title | default "News" }}</h3>
+ 
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="news-list">
-                    {{ range .Site.Params.newss.items }}
+                    {{ range .Site.Params.news.items }}
                     <div class="news-item mb-4">
                         <h5 class="news-title">
                             {{ if .url }}
@@ -30,4 +26,5 @@
             </div>
         </div>
     </div>
-</div>
+</section>
+{{ end }}
