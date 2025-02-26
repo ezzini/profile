@@ -15,11 +15,38 @@
 
                 {{ if .Site.Params.about.skills.enable }}
                 <strong>{{ .Site.Params.about.skills.title }}</strong>
-                <ul>
-                    {{ range .Site.Params.about.skills.items }}
-                    <li>{{ . | markdownify }}</li>
+                <div class="row">
+                    {{ $skillsItems := .Site.Params.about.skills.items }}
+                    {{ $totalSkills := len $skillsItems }}
+                    {{ $itemsPerCol := div $totalSkills 3 }}
+                    {{ if ne (mod $totalSkills 3) 0 }}
+                        {{ $itemsPerCol = add $itemsPerCol 1 }}
                     {{ end }}
-                </ul>
+                    
+                    <div class="col-sm-4">
+                        <ul>
+                            {{ range first $itemsPerCol $skillsItems }}
+                            <li>{{ . | markdownify }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <ul>
+                            {{ range first $itemsPerCol (after $itemsPerCol $skillsItems) }}
+                            <li>{{ . | markdownify }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <ul>
+                            {{ range after (mul 2 $itemsPerCol) $skillsItems }}
+                            <li>{{ . | markdownify }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
                 {{ end }}
             </div>
         </div>
