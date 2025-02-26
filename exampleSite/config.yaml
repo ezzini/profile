@@ -1,0 +1,387 @@
+baseURL: "https://dtang.netlify.app"
+languageCode: "en-us"
+title: "Daniel Tang's homepage"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+#services:
+  #googleAnalytics:
+    #id: G-MEASUREMENT_ID
+  #disqus:
+    #shortname: your-disqus-shortname
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+
+Menus:
+  main:
+    - identifier: publications
+      name: Publications
+      title: Publications
+      url: /#publications
+      weight: 1
+# Menus:
+#   main:
+#     - identifier: blog
+#       name: Blog
+#       title: Blog posts
+#       url: /blogs
+#       weight: 1
+#     - identifier: gallery
+#       name: Gallery
+#       title: Blog posts
+#       url: /gallery
+#       weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Daniel Tang's homepage"
+  description: This is my new website
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+     defaultTheme: "dark" # light
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  # color:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   textLinkColor: "#007bff"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    brandLogo: "/fav.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Daniel Tang" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Daniel Tang."
+    subtitle: "AI for Software Engineering Researcher"
+    content: "A passionate Software Engineering PhD researcher at the University of Luxembourg, exploring the exciting intersection of LLMs and Software Engineering, from intelligent agents to robust security and automatic repair."
+    image: /images/avatar.png
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/daniel4se
+        - icon: ai ai-google-scholar
+          url: https://scholar.google.com/citations?user=MxpAtQoAAAAJ&hl=zh-CN
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/tang.jpeg"
+    content: |-
+      Daniel (Xunzhu) Tang is a doctoral researcher of Trux, [Interdisciplinary Security and Trust Centre (SnT), University of Luxembourg (UL)](https://wwwen.uni.lu/snt) . His research interests mainly relate to Code&Patch; Explanation, Automatic Program Repair, Collaborative Agents for SE, Conversational IDE, Security in Large Language Model (LLM) (i.e, LLM poisoning, LLM watermarks). His researches has been published in largely diverse top-tier conferences/journals in both NLP, SE, and ML communities, including ICSE, ASE, EMSE, ICLR, ACL, NAACL, etc. Furthermore, Daniel also work as PC/Reviewer/AC in SOSP, ACL, EMNLP, MSR, etc. 
+      
+      I am currently working on a project that will be used to help people find the best way to get around the city.
+    skills:
+      enable: true
+      title: "Research interests:"
+      items:
+        - "LLM-Based Agents for software engineering: CodeAgent, CodeChat"
+        - "Patch Representation and Explanation"
+        - "Software Security"
+        - "Automatic Programm Repair"
+        - "Large Code(Language) Model"     
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      # - job: "Founder and CEO of Enoch-AI"
+      #   company: "Enoch-AI"
+      #   companyUrl: "https://enoch-ai.com"
+      #   date: "Dec 2023 - present"
+      #   featuredLink:
+      #     enable: false
+      #     name: "View the project"
+      #     url: "https://enoch-ai.com"
+      #   content: "I created this start-up to commercialize Agents-based AI software solutions."
+      
+      - job: "Doctoral Researcher"
+        company: "TruX - SnT"
+        companyUrl: "https://www.uni.lu/snt-en/research-groups/trux/"
+        date: "Oct 2021 - present"
+
+      - job: "Research Assistant"
+        company: "Institute of Computing Technology"
+        companyUrl: "http://english.ict.cas.cn/"
+        date: "Sep 2020 - Oct 2021"
+        content: Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China
+        # featuredLink:
+        #   enable: true
+        #   url: "https://example.com"
+          
+      - job: "Research Assistant Intern"
+        company: "Penn State University"
+        companyUrl: "https://www.psu.edu/"
+        date: "May 2020 - Aug 2020"
+          
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "PhD of Computer Science"
+        school:
+          name: "University of Luxembourg, Luxembourg"
+        date: "2021 - Now"
+        
+        content: |-
+          supervised by Prof. [Dr. Tegawendé F. Bissyandé](wwwen.uni.lu/snt/people/tegawende_francois_d_assise_bissyande)
+
+      - title: "Master of Science in Computer Science"
+        school:
+          name: "Huazhong University of Science and Technology, Wuhan, China"
+        date: "2016 - 2021"
+
+      - title: "Bachelor of Science in Computer Science"
+        school:
+          name: "Guangxi University, Guangxi, China"
+        date: "2012 - 2016"
+
+  # Publications section
+  publications:
+    enable: true
+    title: "Publications"
+    items:
+      - title: "CodeAgent: Collaborative Software Development with Large Language Models"
+        venue: "EMNLP 2024"
+        authors: "Daniel Tang, et al."
+        year: "2024"
+        url: "https://aclanthology.org/2024.emnlp-main.632.pdf"
+        
+      - title: "DataRecipe: Data Generation and Augmentation for Software Engineering"
+        venue: "ASE 2024"
+        authors: "Daniel Tang, et al."
+        year: "2024"
+        url: "#"
+        
+      - title: "HedgeCode: Securing Large Language Models for Code"
+        venue: "ICSE 2025"
+        authors: "Daniel Tang, et al."
+        year: "2024"
+        url: "#"
+        
+      # Add more publications as needed
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "News"
+    items:
+      - title: CodeAgent 
+        content: 🔊 2024-09, Our CodeAgent is accepted by EMNLP'24 main track 
+        url: https://aclanthology.org/2024.emnlp-main.632.pdf
+      - title: DataRecipe
+        content: 🔊 2024-08, Our DataRecipe is accepted by ASE'24 main track
+        # image: /images/achievement.jpg
+      - title: BugRMSys 
+        content: 🔊 2024-08, Our BugRMSys is accepted by ASE'24 journal first
+      - title: HedgeCode
+        content: 🔊 2024-07, Our HedgeCode is accepted by ICSE'25
+      - title: Google Summer of Code
+        content: 🔊 2024-04, Our TSED is accepted by ARR2024 (ACL'24) Feb
+      - title: VisLingInstruct
+        content: 🔊 2024-02, Our VisLingInstruct is accepted by NAACL'24
+      - title: CodeAgent
+        content: 🔊 2024-02, CodeAgent is invited to give a global talk @ SAP group
+      - title: Accepted at ICLR
+        content: 🔊 2024-02, one paper accepted by ICLR'24 tiny track
+      - title: Accepted at ICSE
+        content: 🔊 2024-01, one paper accepted by ICSE'24 Poster
+      - title: Accepted at ICSE
+        content: 🔊 2023-12, one paper accepted by ICSE'24 SEIP
+      - title: Accepted at ASE 
+        content: 🔊 2023-07, one paper accepted by ASE'23
+      
+
+
+  # projects
+  # projects:
+  #   enable: true
+  #   # title: "Custom Name"
+  #   items:
+  #     - title: Hugo Profile
+  #       content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+  #       image: /images/projects/profile.png
+  #       featured:
+  #         name: Demo
+  #         link: https://hugo-profile.netlify.app
+  #       badges:
+  #         - "Hugo"
+  #         - "Bootstrap"
+  #         - "Javascript"
+  #       links:
+  #         - icon: fa fa-envelope
+  #           url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+  #         - icon: fab fa-github
+  #           url: https://github.com/gurusabarish/hugo-profile
+  #         - icon: fab fa-twitter
+  #           url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+  #     - title: Image Converter
+  #       content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+  #       image: /images/projects/converter.jpg
+  #       featured:
+  #         name: Demo
+  #         link: https://django-converter.herokuapp.com
+  #       badges:
+  #         - "Django"
+  #         - "Bootstrap"
+  #       links:
+  #         - icon: fab fa-github
+  #           url: https://github.com/gurusabarish/converter
+
+  #     - title: Hugo Profile V2
+  #       content: A clean and simple Hugo template for personal portfolio and blog.
+  #       image: /images/projects/profile2.jpg
+  #       featured:
+  #         name: Demo V2
+  #         link: https://hugo-profile-2.netlify.app
+  #       badges:
+  #         - "Hugo"
+  #         - "Bootstrap"
+  #         - "Javascript"
+  #       links:
+  #         - icon: fab fa-github
+  #           url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: |
+      Address: University of Luxembourg, 6, rue Richard Coudenhove-Kalergi, L-1359 Luxembourg, Luxembourg 
+      
+      Phone: +352 661575801
+
+      My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    btnName: Mail me
+    btnLink: mailto:xunzhu.tang@uni.lu 
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  
+
+ 
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
